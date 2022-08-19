@@ -12,11 +12,11 @@ function imc(){
         //toFixed serve para arrumar o decimal, 1 casa após a virgula
 
         if(valorIMC < 18.5){
-            tipoIMC = 'Magreza';
+            tipoIMC = 'magreza';
         }else if(valorIMC < 24.9){
-            tipoIMC = 'Normal';
+            tipoIMC = 'normal';
         }else if(valorIMC < 30){
-            tipoIMC = 'Sobrepeso';
+            tipoIMC = 'sobrepeso';
         }else if(valorIMC < 35){
             tipoIMC = 'obesidade grau 1';
         }else if(valorIMC < 40 ){
@@ -24,12 +24,15 @@ function imc(){
         } else { 
             tipoIMC = 'obesidade grau 3';
         }
-        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${tipoIMC}`;
+        resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está no nível de ${tipoIMC}`;
     }else{
         resultado.textContent = "Preencha todos os campos!";
     }
 }
 calcular.addEventListener('click',imc);
+
+
+
 
 
 
