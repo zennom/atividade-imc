@@ -13,7 +13,7 @@ function imc(){
 
         if(valorIMC < 18.5){
             tipoIMC = 'Magreza';
-        }else if(valorIMC < 25){
+        }else if(valorIMC < 24.9){
             tipoIMC = 'Normal';
         }else if(valorIMC < 30){
             tipoIMC = 'Sobrepeso';
